@@ -62,12 +62,12 @@ const Auth = () => {
 
   const authSubmitHandler = async (event) => {
     event.preventDefault();
-    console.log(
-      formState.inputs.name.value,
-      formState.inputs.email.value,
-      formState.inputs.password.value,
-      formState.inputs.confirmPassword.value
-    );
+    // console.log(
+    //   formState.inputs.name.value,
+    //   formState.inputs.email.value,
+    //   formState.inputs.password.value,
+    //   formState.inputs.confirmPassword.value
+    // );
     if (isLoginMode) {
     } else {
       try {

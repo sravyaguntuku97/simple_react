@@ -5,7 +5,6 @@ import {
   Redirect,
   Switch
 } from 'react-router-dom';
-
 import Users from './user/pages/Users';
 import NewPlace from './places/pages/NewPlace';
 import UserPlaces from './places/pages/UserPlaces';
@@ -63,9 +62,7 @@ const App = () => {
   }
 
   return (
-    <AuthContext.Provider
-      value={{ isLoggedIn: isLoggedIn, login: login, logout: logout }}
-    >
+    <AuthContext.Provider value={{ isLoggedIn: isLoggedIn, login: login, logout: logout }} >
       <Router>
         <MainNavigation />
         <main>{routes}</main>
